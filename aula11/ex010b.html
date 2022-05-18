@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Informe o pais de residencia</h1>
+    <input type="text" id="txt">
+    <input type="button" value="Confirmar" onclick="calc()">
+    <div id="res"></div>
+    <script>
+        function calc(){
+            pais = document.getElementById('txt')
+            res = document.getElementById('res')
+            if(pais.value == 'brasil'){
+               res.innerHTML = `Brasileiro` 
+            } else{
+                res.innerHTML = `Gringo`
+            }
+        }
+    </script>
+</body>
+</html>
